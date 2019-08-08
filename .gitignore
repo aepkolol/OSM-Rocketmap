@@ -5,7 +5,7 @@
 *.sass-cache
 *.orig
 *.json
-config/*
+config/
 !config/config.ini.example
 geofences/*
 !geofences/*.example
