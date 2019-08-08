@@ -368,6 +368,13 @@ $(function () {
             showCancelButton: true,
             confirmButtonText: 'Sign In',
             cancelButtonText: 'Sign Up',
+            focusComfirm: false,
+            preConfirm: () => {
+                return [
+                    document.getElementById('emai').value,
+                    document.getElementById('password').value
+                ]
+            }
         }).then((result) => {
             if (result.value) {
                 swalWithBootstrapButtons.fire(
